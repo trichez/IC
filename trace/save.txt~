@@ -1,0 +1,4 @@
+mem dinamica
+saídas ok com o original
+começado a validacao de entrada integrada com BM
+já computa n vezes, porém com um mesmo arquivo de traços (com alocação linear de mem)

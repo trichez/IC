@@ -1,0 +1,44 @@
+23
+50 0 0.002 ATL
+55 -1 -1 OriginalGaussMarkov
+40 1 0.032 SVC
+44 -1 -1 SLAW
+10 2 1.193 SAR
+5 3 0.529 AVC
+3 -1 -1 SMOOTH
+6 -1 -1 ManhattanGrid
+12 4 0.056 IDSD
+11 -1 -1 RPGM
+14 5 0.026 IDTD
+13 -1 -1 CMM
+30 6 0.348 DSA
+31 -1 -1 Column
+28 7 0.264 DNP
+29 -1 -1 RandomDirection
+16 10 0.766 DSA
+15 -1 -1 RandomWaypoint
+25 8 0.129 DNSD
+26 -1 -1 RandomWalk
+23 9 0.004 DLC
+22 -1 -1 RandomWalk
+24 -1 -1 RandomWaypoint
+
+numberOfnodes
+id metricNumber metricValue name //1
+...
+...
+...
+id metricNumber metricValue name //numberOfNodes
+
+para nó-métrica:
+    id = chave levada em consideração na inserção/construção da árvore
+    metricNumber = indice do vetor de métricas a ser comparado com essa métrica
+    metricValue = valor da métrica para decisão, no nó em questão
+    name = nome da métrica em questão
+para nó-modelo (nó folha)
+    id = chave levada em consideração na inserção/construção da árvore
+    metricNumber = -1 //como não é um nó de decisão, precisa ser -1
+    metricValue = -1  //como não é um nó de decisão, precisa ser -1
+    name = nome do modelo
+------------------------------------------------------------------
+*descrever como é organizada a arvore e os parâmetros
