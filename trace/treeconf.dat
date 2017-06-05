@@ -1,4 +1,3 @@
-23
 50 0 0.002 ATL
 55 -1 -1 OriginalGaussMarkov
 40 1 0.032 SVC
@@ -23,7 +22,7 @@
 22 -1 -1 RandomWalk
 24 -1 -1 RandomWaypoint
 
-numberOfnodes
+
 id metricNumber metricValue name //1
 ...
 ...
@@ -41,4 +40,8 @@ para nó-modelo (nó folha)
     metricValue = -1  //como não é um nó de decisão, precisa ser -1
     name = nome do modelo
 ------------------------------------------------------------------
-*descrever como é organizada a arvore e os parâmetros
+Conforme a descrição acima, cada linha representa um nó da árvore de decisão.
+A árvode de decisão é uma árvore binária em que cada nó folha representa um modelo de mobilidade.
+Os demais representam uma métrica e um valor para a tomada de decisão sobre por qual nó filho deve-se seguir para classificar o arquivo de traços em análise.
+Os valores padrão apresentados nesse arquivo são os da árvore proposta por Elmano R. Cavalcanti no artigo "On the applicability of mobility metrics for user movement pattern recognition in MANETs
+" página 7, disponivel em http://dl.acm.org/citation.cfm?id=2508228 (acesso 05/06/2017)
