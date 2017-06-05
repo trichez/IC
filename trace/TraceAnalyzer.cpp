@@ -2,12 +2,12 @@
 // Name        : TraceAnalyzer.cpp
 // Author      : Elmano R. Cavalcanti
 // Version     : 2.1 (May 13 2011)
-// Copyright   : Your copyright notice
+// Copyright   :
 // Description : Mobility Trace Analyzer (NS-2 compatible)
 //============================================================================
 /*
 * TraceAnalyzer.cpp
-*
+* License: GPL 2.0
 *  Version 2.1: May 13 2011
 *      Author: elmano
 *      elmano.cavalcanti@garanhuns.ifpe.edu.br
