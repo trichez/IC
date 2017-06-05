@@ -1,6 +1,6 @@
 /*
  * misc.h
- *
+ * License: GPL 2.0
  *  Created on: 04/02/2010
  *      Author: elmano
  *      elmano.cavalcanti@garanhuns.ifpe.edu.br
