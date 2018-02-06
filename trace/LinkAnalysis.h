@@ -278,7 +278,7 @@ Trace::Trace(int nodeNUM, int time_slot, int timePause, int node_pause_time_slot
 	ini_x	= (double *) malloc(node_num * sizeof(double));
 	ini_y = (double *) malloc(node_num * sizeof(double));
 
-	metrics = (double *) malloc(11 * sizeof(double));		/*ler esse 11 do treeconf.dat number of nodes on the tree*/														
+	metrics = (double *) malloc(11 * sizeof(double));		/*ler esse 11 do treeconf.dat number of nodes on the tree*/
 
 }
 
@@ -1172,10 +1172,12 @@ int Trace::update_moving_state(int id, int t){
 
 bool Trace::node_is_stationary(int id, int t){
 	//initial stationary condition:
-	if (t==0 and trace[id][t].speed==0){
-		trace[id][t].next_x=trace[id][t].x;
-		trace[id][t].next_y=trace[id][t].y;
+	if (t == 0 and trace[id][t].speed == 0){
+		trace[id][t].next_x = trace[id][t].x;
+		trace[id][t].next_y = trace[id][t].y;
 		return true;
+	}else if(t == 0){ // when the node starts the simulsation already running
+		return false;
 	}
 	//node is stationary if previous speed is 0 and next_x,y is equal as previous x,y or next_x,y is 0
 
