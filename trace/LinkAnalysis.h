@@ -564,11 +564,9 @@ void Trace::setAngleSpeedArrays(){
 //=-----
 double Trace::degreeOfLinkChanges(){
 	unsigned long long int n = this->node_num;
-	unsigned long long int max;
+	unsigned long long int max = (n * (n - 1)) / 2; //factorial(log(n)) / (factorial(log(2)) * log((n - 2)));
 
-	max = factorial(n) / (factorial(2) * (n - 2));
-
-	return log(this->total_link_change)/ log((double)max);
+	return log(this->total_link_change)/ log(max);
 }
 //=-----
 
